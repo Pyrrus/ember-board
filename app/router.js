@@ -7,9 +7,9 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('question');
-  this.route('about');
-  this.route('contact');
+  this.route('question', {path: '/question/:question_id'});
+  this.route('add');
+  this.route('questions');
 });
 
 export default Router;

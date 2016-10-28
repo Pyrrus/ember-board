@@ -1,1 +1,7 @@
-{{outlet}}
+<div class="row">
+  {{#each model as |question|}}
+    {{question-list-col question=question}}
+  {{else}}
+    <div>something is wrong with the model</div>
+  {{/each}}
+</div>
