@@ -18,6 +18,7 @@ export default Ember.Route.extend({
       if (output === '') {
       	var newQuestion = this.store.createRecord('question', params);
         newQuestion.save();
+        this.transitionTo('/view/' + newQuestion.id);
       } else {
       	window.alert(output);
       }
