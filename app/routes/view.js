@@ -6,12 +6,24 @@ export default Ember.Route.extend({
   },
   actions: {
   	save(params) {
-  	  var newAnswer = this.store.createRecord('answer', params);
-      var question = params.question;
-      question.get('answers').addObject(newAnswer);
-      newAnswer.save().then(function() {
-        return question.save();
-      });
+      var output = "";
+      if (params.author === undefined) {
+        output += "Please add an author\n";
+      }
+
+      if (params.answer === undefined) {
+        output += "Please add an answer\n";
+      }
+      if (output === '') {
+    	  var newAnswer = this.store.createRecord('answer', params);
+        var question = params.question;
+        question.get('answers').addObject(newAnswer);
+        newAnswer.save().then(function() {
+          return question.save();
+        });
+      } else {
+        window.alert(output);
+      }
   	}
   }
 });
