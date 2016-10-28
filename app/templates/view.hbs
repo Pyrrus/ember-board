@@ -10,4 +10,15 @@
 
 <div id="answers" class="row">
   <h3>Answers</h3>
+
+  <hr />
+
+  {{#each model.answers as |answer|}}
+    {{{answer.answer}}}
+    <br />
+    {{answer.author}}
+  {{/each}}
+
+  {{answer-add save="save" question=model}}
+
 </div>

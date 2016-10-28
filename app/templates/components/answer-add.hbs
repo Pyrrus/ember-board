@@ -1,1 +1,16 @@
-{{yield}}
+<div>
+  <form>
+
+    <div class="form-group">
+      <label for="content">Answer</label>
+      {{tinymce-editor options=options id="answer" class="form-control" value=answer}}
+    </div>
+
+    <div class="form-group">
+      <label for="author">Author</label>
+      {{input value=author class="form-control" id="author"}}
+    </div>
+
+    <button {{action 'save' question}}>Add Answer</button>
+  </form>
+</div>
