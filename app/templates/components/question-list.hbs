@@ -31,6 +31,10 @@
           <button class="btn btn-danger btn-sm" {{action 'deleteQuestion' question}}><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
         </td>
       </tr>
+      {{else}}
+        <tr>
+          <td><h2>There are no question on the site</h2></td>
+        </tr>
     {{/each}}
   </tbody>
 </table>

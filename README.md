@@ -1,53 +1,60 @@
-# Blog
+# Ember board using EmberJS, and JavaScript
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+## This site will make, edit, and remove question, and add answer to the question  10/28/16
 
-## Prerequisites
+#### By **Adam Gorbahn**
 
-You will need the following things properly installed on your computer.
+## Description
+This site will make list of questions and give like to the question with more info and answers.
+Also, site can make new question, edit it, and remove.
 
-* [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with NPM)
-* [Bower](http://bower.io/)
-* [Ember CLI](http://ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+## Specifications
 
-## Installation
+#### 'add' page
 
-* `git clone <repository-url>` this repository
-* `cd blog`
-* `npm install`
-* `bower install`
+user input                | output
+------------------------- | -------------
+Type in the text fields for the question. click on 'Add new question' | will make the new question and will redirect to view for the question just made.
 
-## Running / Development
+#### '/questions' page
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+user input                | output
+------------------------- | -------------
+click on 'edit' button    | it will redirect to the 'edit/id' page to edit the page. id mean what it working on.
 
-### Code Generators
+user input                | output
+------------------------- | -------------
+click on 'delete' button  | it will ask you 'do you what to delete it? yes or no'. if yes, it will remove the quesiton. if no, it do nothing with it.
 
-Make use of the many generators for code, try `ember help generate` for more details
 
-### Running Tests
+#### '/edit/id' page, id means what page working on.
 
-* `ember test`
-* `ember test --server`
+user input                | output
+------------------------- | -------------
+Edit in the text fields for the question. click on 'update' | will update question and will redirect to view for the question just made.
 
-### Building
+#### 'view/id', id means what page viewing on. 
 
-* `ember build` (development)
-* `ember build --environment production` (production)
+user input                | output
+------------------------- | -------------
+Type in the text fields for the answer. click on 'Add Answer' | will make the new answer and will add to that question.
 
-### Deploying
+## Setup/Installation Requirements
 
-Specify what it takes to deploy your app.
+* need NodeJS, npm, and bower.
+* npm install
+* bower install
+* Ember s
 
-## Further Reading / Useful Links
+## Technologies Used
 
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+* HTML
+* JavaScript
+* NodeJS
+* EmberJS
 
+### License
+
+*GPL*
+
+Copyright (c) 2016 **Adam Gorbahn**
