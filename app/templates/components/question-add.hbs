@@ -1,1 +1,21 @@
-{{yield}}
+<h1>Add new quesiton</h1>
+<div>
+  <form>
+    <div class="form-group">
+      <label for="question">Question</label>
+      {{input value=question class="form-control" id="question"}}
+    </div>
+
+    <div class="form-group">
+      <label for="author">Author</label>
+      {{input value=author class="form-control" id="author"}}
+    </div>
+
+    <div class="form-group">
+      <label for="content">Content</label>
+      {{tinymce-editor options=options id="moreinfo" class="form-control" value=moreinfo}}
+    </div>
+
+    <button {{action 'save'}}>Add new question</button>
+  </form>
+</div>
