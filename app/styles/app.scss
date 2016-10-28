@@ -1,0 +1,55 @@
+$mainbackground: #336699;
+$background: #666666;
+$text: #999999;
+$link: silver;
+
+body {
+  background-color: $mainbackground;
+  color: $text;
+  .jumbotron {
+  	background-color: $background;
+  }
+  .navbar-default {
+  	background-color: $background;
+  	border-color: darken($background, 5%);
+  	.navbar-brand {
+  	  color: $text;
+  	}
+  	.navbar-brand:hover {
+  	  color: darken($text, 5%);
+  	}
+  	.navbar-toggle {
+  	  border-color: darken($background, 5%);
+  	}
+  	.navbar-toggle:hover, .navbar-toggle:focus {
+  	  background-color: darken($text, 2%);
+  	}
+  	.navbar-collapse {
+  	  border-color: darken($background, 5%);
+  	}
+  	.navbar-nav > li > a {
+  	  color: $text;
+  	}
+  	.navbar-nav > li > a:hover {
+  	  color: darken($text, 5%);
+  	}
+  }
+
+  .question {
+  	border-color: darken($background, 5%);
+  	background-color: none;
+  	.panel-heading {
+  	  background-color: $background;
+  	}
+
+  	a {
+  	  color: $text;
+  	  text-decoration: none;
+  	}
+  	a:hover {
+  	  color: darken($text, 5%);
+  	}
+
+  }
+
+}

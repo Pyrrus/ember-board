@@ -1,4 +1,6 @@
-<div class="col-md-6 text-center questionIndex">
-  <h1>{{#link-to 'view' question.id}}{{question.question}}{{/link-to}}</h1>
-  <h5>{{question.author}}</h5>
+<div class="col-md-6 text-center">
+  <div class="panel question">
+    {{#link-to 'view' question.id}}<div class="panel-heading"><h1>{{question.question}}</h1></div>{{/link-to}}
+    <div class="panel-footer">By {{question.author}}</div>
+  </div>
 </div>
