@@ -1,0 +1,10 @@
+{ "questions": [{
+    "question": "Emberjs is cool?",
+    "author": "Adam Gorbahn",
+    "moreinfo": "Ember is ok for now"
+  }, {
+    "question": "Next framework for web.",
+    "author": "Adam Gorbahn",
+    "moreinfo": "web is have way to many framework."
+  }]
+}
