@@ -1,1 +1,19 @@
-{{yield}}
+<div class="row">
+	{{#each answers as |answer|}}
+	 <div class="col-md-4">
+	  <div class="panel question">
+	  	<div class="panel-heading"><h2>Answer</h2></div>
+	  	<div class="panel-body">{{{answer.answer}}}</div>
+	    <div class="panel-footer">By {{answer.author}}</div>
+	  </div>
+	 </div>
+	 {{else}}
+	 	<div class="col-md-12">
+		  <div class="panel question">
+		  	<div class="panel-heading"><h2>Answer</h2></div>
+		  	<div class="panel-body">There are no answer yet on the quesiton</div>
+		    <div class="panel-footer">By Admin</div>
+		  </div>
+		 </div>
+	{{/each}}
+</div>

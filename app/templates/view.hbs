@@ -1,24 +1,11 @@
-<div class="row blog">
-    <div class="col-md-12">
-      <h1>{{model.question}}</h1>
-      <hr />
-      {{{model.moreinfo}}}
-      <hr />
-      <h5>{{model.author}}</h5>
-    </div>
+<div class="panel question">
+  <div class="panel-heading"><h1>{{model.question}}</h1></div>
+  <div class="panel-body">
+    {{{model.moreinfo}}}
+  </div>
+  <div class="panel-footer">By {{model.author}}</div>
 </div>
-
-<div id="answers" class="row">
-  <h3>Answers</h3>
-
-  <hr />
-
-  {{#each model.answers as |answer|}}
-    {{{answer.answer}}}
-    <br />
-    {{answer.author}}
-  {{/each}}
-
-  {{answer-add save="save" question=model}}
-
-</div>
+<hr />
+{{answer-list answers=model.answers}}
+<hr />
+{{answer-add save="save" question=model}}

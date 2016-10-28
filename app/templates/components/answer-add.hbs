@@ -1,16 +1,15 @@
-<div>
-  <form>
-
+<div class="panel question">
+  <div class="panel-heading"><h2>Add New Answer</h2></div>
+  <div class="panel-body">
     <div class="form-group">
       <label for="content">Answer</label>
       {{tinymce-editor options=options id="answer" class="form-control" value=answer}}
-    </div>
+     </div>
 
     <div class="form-group">
       <label for="author">Author</label>
       {{input value=author class="form-control" id="author"}}
     </div>
-
-    <button {{action 'save' question}}>Add Answer</button>
-  </form>
+  </div>
+  <div class="panel-footer"><button class="btn btn-success" {{action 'save' question}}>Add Answer</button></div>
 </div>
