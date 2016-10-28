@@ -37,11 +37,15 @@ body {
 
   .question {
   	border-color: darken($background, 5%);
-  	background-color: none;
+ 	background-color: transparent;
   	.panel-heading {
   	  background-color: $background;
   	}
 
+  	.panel-body {
+  	  background-color: white;
+  	  color: black;
+  	}
   	a {
   	  color: $text;
   	  text-decoration: none;
@@ -50,6 +54,13 @@ body {
   	  color: darken($text, 5%);
   	}
 
+  }
+
+  table {
+  	background-color: white;
+  	thead {
+  	  background-color: $background;
+  	}
   }
 
 }
