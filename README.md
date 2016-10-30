@@ -39,6 +39,9 @@ user input                | output
 ------------------------- | -------------
 Type in the text fields for the answer. click on 'Add Answer' | will make the new answer and will add to that question.
 
+## Bugs
+* When question have an answer it will not delete first load in. need to way for some time. then it will delete.
+
 ## Setup/Installation Requirements
 
 * need NodeJS, npm, and bower.
