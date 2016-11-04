@@ -1,5 +1,15 @@
 <div class="row">
-	{{#each answers as |answer|}}
+	<div class="col-md-4">
+	<div class="panel question">
+	  	<div class="panel-heading">
+	  	  <button class="btn btn-info" {{action "low"}}>Low to High</button>
+	  	  <button class="buttonSpace btn btn-info" {{action "high"}}>High to Low</button>
+	  	</div>
+	 </div>
+	</div>
+</div>
+<div class="row">
+	{{#each sortLike as |answer|}}
 	 <div class="col-md-4">
 	  <div class="panel question">
 	  	<div class="panel-heading"><h2>Answer</h2></div>

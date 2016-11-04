@@ -1,6 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+	sortBy: ['like:desc'],
+  	sortLike: Ember.computed.sort('answers', 'sortBy'),
 	actions: {
 		addLike(likes, answer, type) {
 			if (type === "up") {
@@ -17,6 +19,12 @@ export default Ember.Component.extend({
 	          }
 	        });
 	        answer.save();
+		},
+		high() {
+			this.set('sortBy', ['like:desc']);
+		},
+		low() {
+			this.set('sortBy', ['like']);
 		}
 	}
 });
