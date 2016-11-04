@@ -1,19 +1,22 @@
-<div class="row">
-	<div class="col-md-4">
-	<div class="panel question">
-	  	<div class="panel-heading">
-	  	  <button class="btn btn-info" {{action "low"}}>Low to High</button>
-	  	  <button class="buttonSpace btn btn-info" {{action "high"}}>High to Low</button>
-	  	</div>
-	 </div>
+
+{{#if answers}}
+	<div class="row">
+	  <div class="col-md-4">
+		<div class="panel question">
+		  	<div class="panel-heading">
+		  	  <button class="btn btn-info" {{action "low"}}>Low to High</button>
+		  	  <button class="buttonSpace btn btn-info" {{action "high"}}>High to Low</button>
+		  	</div>
+		 </div>
+	  </div>
 	</div>
-</div>
+{{/if}}
 <div class="row">
 	{{#each sortLike as |answer|}}
 	 <div class="col-md-4">
 	  <div class="panel question">
 	  	<div class="panel-heading">{{{vote-color answer.like}}}</div>
-	  	<div class="panel-body">{{{answer.answer}}}</div>
+	  	<div class="panel-body size">{{{answer.answer}}}</div>
 	    <div class="panel-footer">
 	    	By {{answer.author}} 
 	    	<span class="pull-right">
