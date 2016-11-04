@@ -12,7 +12,7 @@
 	{{#each sortLike as |answer|}}
 	 <div class="col-md-4">
 	  <div class="panel question">
-	  	<div class="panel-heading"><h2>Answer</h2></div>
+	  	<div class="panel-heading">{{{vote-color answer.like}}}</div>
 	  	<div class="panel-body">{{{answer.answer}}}</div>
 	    <div class="panel-footer">
 	    	By {{answer.author}} 
