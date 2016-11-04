@@ -4,7 +4,18 @@
 	  <div class="panel question">
 	  	<div class="panel-heading"><h2>Answer</h2></div>
 	  	<div class="panel-body">{{{answer.answer}}}</div>
-	    <div class="panel-footer">By {{answer.author}}</div>
+	    <div class="panel-footer">
+	    	By {{answer.author}} 
+	    	<span class="pull-right">
+	    		<a href="#" {{action "addLike" answer.like answer 'up'}}>
+	    			<i class="fa fa-thumbs-up" aria-hidden="true"></i>
+	    		</a>
+	    		<span class="numberAnswer">{{answer.like}}</span>
+	    		<a href="#" {{action "addLike" answer.like answer 'down'}}>
+	    			<i class="fa fa-thumbs-down" aria-hidden="true"></i>
+	    		</a>
+	    	</span>
+	    </div>
 	  </div>
 	 </div>
 	 {{else}}

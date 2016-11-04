@@ -6,6 +6,6 @@
   <div class="panel-footer">By {{model.author}}</div>
 </div>
 <hr />
-{{answer-list answers=model.answers}}
+{{answer-list updateLike="addLike" answers=model.answers}}
 <hr />
 {{answer-add save="save" question=model}}

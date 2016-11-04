@@ -24,14 +24,6 @@ export default Ember.Route.extend({
       } else {
         window.alert(output);
       }
-  	},
-    updateLike(params, answer) {
-        Object.keys(params).forEach(function(key) {
-          if(params[key]!==undefined) {
-            answer.set(key,params[key]);
-          }
-        });
-        answer.save();
-    }
+  	}
   }
 });
