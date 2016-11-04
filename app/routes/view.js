@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+  questionsList: Ember.inject.service(),
   model(params) {
     return this.store.findRecord('question', params.question_id);
   },
@@ -24,6 +25,9 @@ export default Ember.Route.extend({
       } else {
         window.alert(output);
       }
-  	}
+  	},
+    addToQuestion(question) {
+      this.get('questionsList').add(question);
+    }
   }
 });

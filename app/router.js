@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('questions');
   this.route('edit', {path: '/edit/:question_id'});
   this.route('view', {path: '/view/:question_id'});
+  this.route('favorites');
 });
 
 export default Router;

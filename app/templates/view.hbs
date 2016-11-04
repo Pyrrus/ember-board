@@ -1,5 +1,5 @@
 <div class="panel question">
-  <div class="panel-heading"><h1>{{model.question}}</h1></div>
+  <div class="panel-heading"><h1><button class="btn btn-success" {{action 'addToQuestion' model}}><i class="fa fa-plus-circle" aria-hidden="true"></i></button> {{model.question}}</h1></div>
   <div class="panel-body">
     {{{model.moreinfo}}}
   </div>
